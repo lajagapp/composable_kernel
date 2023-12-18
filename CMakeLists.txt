@@ -161,6 +161,8 @@ if(USE_OPT_NAVI3X)
     message("CK compiled with USE_OPT_NAVI3X set to ${USE_OPT_NAVI3X}")
 endif()
 
+add_compile_options(-Wno-pass-failed)
+
 ## Threads
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
