@@ -380,9 +380,7 @@ struct DeviceGemm_Xdl_CShuffle_LdsDirectLoad : public DeviceGemm<ALayout,
             << " LoopScheduler: "
             << LoopSchedToString[LoopSched] << ", "
             << "PipelineVersion: "
-            << PipelineVersionToString[PipelineVer] << ", "
-            << "Prefetch: "
-            << NumGemmKPrefetchStage;
+            << PipelineVersionToString[PipelineVer];
         // clang-format on
 
         return str.str();
