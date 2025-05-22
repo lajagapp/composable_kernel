@@ -387,6 +387,8 @@ else()
     add_compile_definitions(__HIP_PLATFORM_HCC__=1)
 endif()
 
+add_compile_options(-Wno-c++20-extensions)
+
 ## tidy
 include(EnableCompilerWarnings)
 set(CK_TIDY_ERRORS ERRORS * -readability-inconsistent-declaration-parameter-name)
