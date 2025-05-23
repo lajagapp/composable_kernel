@@ -3,7 +3,6 @@
 
 #pragma once
 
-#if !CK_TILE_USE_BUFFER_ADDRESSING_BUILTIN
 
 #include "ck_tile/core/numeric/integer.hpp"
 #include "ck_tile/core/numeric/integral_constant.hpp"
@@ -2688,4 +2687,3 @@ CK_TILE_DEVICE void amd_direct_load_global_to_lds(const T* global_base_ptr,
 
 } // namespace ck_tile
 
-#endif // !CK_TILE_USE_BUFFER_ADDRESSING_BUILTIN
